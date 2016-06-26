@@ -22,9 +22,9 @@ public class Run {
      */
     public static void main(String[] args) {
         //Make code running (into loop system->while) if inputs equal it's values
-        boolean running = true;
+        boolean isRunning = true;
         //Code running while running = true
-        while(running){
+        while(isRunning){
         //Scanner to input data
         Scanner dataInput = new Scanner(System.in);
         System.out.println("Employes 1 Instructors 2 Students 3 Exit any key ");
@@ -89,7 +89,7 @@ public class Run {
                         break;
                     }
                 default:
-                        running = false;
+                        isRunning = false;
                         break;
             }
                     
@@ -143,7 +143,7 @@ public class Run {
                         break;
                     }
                 default:
-                        running = false;
+                        isRunning = false;
                         break;
             } 
     } else if (mode==3){
@@ -198,13 +198,13 @@ public class Run {
                         break;
                     }
                 default:
-                       running = false;
+                       isRunning = false;
                        break;
             }
     } else {
-        running = false;     
+        isRunning = false;     
     }
-        if (running) {
+        if (isRunning) {
             System.out.println("Have a nice code");
         } else {
             System.out.println("See you later, bye");
